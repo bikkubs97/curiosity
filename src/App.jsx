@@ -14,7 +14,7 @@ function App() {
      const rover = formData.get("rover")
      const camera = formData.get("cam-select")
      const sol = formData.get("SOL")
-     fetch(`http://localhost:3000/search?cam=${camera}&rover=${rover}&sol=${sol}`)
+     fetch(`https://curiosity-server.onrender.com/search?cam=${camera}&rover=${rover}&sol=${sol}`)
      .then((data)=> data.json())
 
      .then((data) => { 
