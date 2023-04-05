@@ -57,6 +57,7 @@ img:hover{
   text-align: center;
   font-size: 1.2rem;
   padding-top: 2rem;
+  text-align: center;
 }
 
 h2{
@@ -87,8 +88,11 @@ h2{
   }
   .photo-container{
     width: 80vw;
+    
   }
-
+  .msg{
+    padding: 1rem;
+  }
 }
 
 
