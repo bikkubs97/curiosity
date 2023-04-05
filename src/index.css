@@ -75,3 +75,22 @@ h2{
 .header{
   display: flex;
 }
+
+@media only screen and (max-width: 600px) {
+  form *{
+    display: block;
+  }
+  body{
+   
+    background-size:auto;
+    height: 100vh;
+  }
+  .photo-container{
+    width: 80vw;
+  }
+
+}
+
+
+
+
