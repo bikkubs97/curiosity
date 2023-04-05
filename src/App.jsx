@@ -9,7 +9,7 @@ function App() {
 
   function handleSubmit(e){
     e.preventDefault()
-    setLoadState("Fetching Images, Please Wait....")
+    setLoadState("Hacking into NASA servers, Please wait!!")
     const formData = new FormData(e.target.form)
      const rover = formData.get("rover")
      const camera = formData.get("cam-select")
@@ -31,7 +31,10 @@ function App() {
 
   return (
     <div className="App">
+      <div className='header'>
      <h1>Welcome to Curiosity!</h1>
+     <div className='load'>{loadSate}</div>
+     </div>
      <p>Access NASA's Curiosity, Opportunity, and Spirit rovers to get Mars photos!</p>
      <div>
         <form>
@@ -69,14 +72,16 @@ function App() {
     })
   ) : (
     <div className='msg'>{msg}<br/>
+   
+
     <h2> Did You Know?</h2>
      <h4>{facts[Math.floor(Math.random() * facts.length)]}</h4>
     
     </div>
   )}
 </div>
-<div className='load'>{loadSate}</div> 
-     <p>Powered by NASA</p>
+ 
+     <p>Powered by NASA API</p>
     </div>
   )
 }
