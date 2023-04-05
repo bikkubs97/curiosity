@@ -90,8 +90,17 @@ h2{
     width: 80vw;
     
   }
+  .header{
+    display: block;
+  }
   .msg{
     padding: 1rem;
+  }
+  .load{
+    position: absolute;
+    top: 2rem;
+    padding-left: 1rem;
+    margin-left: 0;
   }
 }
 
